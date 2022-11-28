@@ -132,7 +132,7 @@ fn main() -> ! {
 
     let (mut r, mut w) = serial.split();
 
-    ufmt::uwriteln!(&mut w, "Hello from Arduino!\r").void_unwrap();
+    ufmt::uwriteln!(&mut w, "# Hello from Serial Monitor for AZ Delivery joystick shield!\r").void_unwrap();
 
     let mut ctx = Context::new();
     let mut axis_read_state = AxisReadState::ReadingX;
